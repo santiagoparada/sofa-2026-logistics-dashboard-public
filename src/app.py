@@ -4,10 +4,10 @@ from pathlib import Path
 
 from flask import Flask, jsonify, send_from_directory
 
-from audit import data_quality_audit
-from config import BASE_DIR, config
-from data_loader import load_logistics_data
-from transformations import dashboard_summary, normalize_logistics_frame
+from src.audit import data_quality_audit
+from src.config import BASE_DIR, config
+from src.data_loader import load_logistics_data
+from src.transformations import dashboard_summary, normalize_logistics_frame
 
 
 PUBLIC_DIR = BASE_DIR / "public"

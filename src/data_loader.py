@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import pandas as pd
 
-from config import config
-from synthetic_data import COLUMNS
+from src.config import config
+from src.synthetic_data import COLUMNS
 
 
 def load_logistics_data() -> pd.DataFrame:
