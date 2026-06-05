@@ -21,6 +21,7 @@ The primary challenge was not collecting information, but transforming dispersed
 
 This repository is a public, synthetic, NDA-safe adaptation of a real logistics information system. The live demo is intentionally simplified for portfolio review, while the original system supported a more complex operational workflow. The public version preserves the architectural logic, data modeling strategy, workflow structure, and dashboard interaction patterns without exposing private data or production access.
 
+
 ### Original System Scope
 
 - 800+ operational logistics records
@@ -66,6 +67,12 @@ data/synthetic/logistics_demo.csv
 ```
 
 The backend reads the local CSV, normalizes records, computes dashboard metrics, and exposes API endpoints through a small Flask application. The public frontend consumes those endpoints and renders summary cards, filters, status charts, and tabular audit data.
+
+## Visual Architecture
+
+The system was designed as an operational information layer between fragmented logistics requirements and execution visibility.
+
+[Architecture Diagram](docs/architecture_diagram.md)
 
 ## Original Workflow Model
 
