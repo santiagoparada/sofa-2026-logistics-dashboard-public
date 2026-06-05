@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: sofa-2026-logistics-dashboard-public
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn src.app:app
