@@ -1,10 +1,57 @@
 # SOFA 2026 Logistics Dashboard — Public Synthetic Version
 
+Live Demo:
+https://sofa-2026-logistics-dashboard-public.onrender.com
+
 ## Overview
 
 This repository is a public, synthetic, NDA-safe version of a real logistics dashboard developed by TRRNGR for Click on Design S.A.S. in the context of SOFA 2026. It does not contain real operational data, credentials, private Google Sheet IDs, or production access.
 
 The project demonstrates a logistics visualization system for pavilion-level implementation tracking, urgent requirement monitoring, verification workflow, and operational audit reporting.
+
+Large-scale events often suffer from information fragmentation.
+
+Implementation requirements are distributed across multiple operational layers, making verification, auditing, prioritization, and coordination difficult.
+
+The primary challenge was not collecting information, but transforming dispersed operational requirements into a structured system that could support execution, visibility, and decision-making.
+
+
+
+## Public Demo vs. Original System
+
+This repository is a public, synthetic, NDA-safe adaptation of a real logistics information system. The live demo is intentionally simplified for portfolio review, while the original system supported a more complex operational workflow. The public version preserves the architectural logic, data modeling strategy, workflow structure, and dashboard interaction patterns without exposing private data or production access.
+
+### Original System Scope
+
+- 800+ operational logistics records
+- Multi-pavilion implementation tracking
+- Hierarchical requirement structure: pavilion -> module -> item -> sub-item
+- Verification and urgency workflows
+- Daily audit/export logic
+- Google Sheets as operational source of truth
+- Flask API layer for dashboard consumption
+- Interactive web interface for operational visibility
+- NDA-safe public refactor using synthetic data
+
+## Why This Project Matters
+
+Many portfolio projects focus on analyzing existing datasets.
+
+This project focuses on designing the information system itself.
+
+The work involved transforming a complex operational environment into a structured, auditable, and searchable workflow capable of supporting real-world execution processes.
+
+The emphasis of the project is information architecture, operational analytics, workflow design, and system implementation rather than dashboard development alone.
+
+### What the Public Demo Shows
+
+- Synthetic dataset with the same structural complexity
+- Local CSV-based data pipeline
+- Flask API endpoints
+- Frontend dashboard consuming the API
+- Data-quality and anonymization tests
+- Render deployment with Gunicorn
+- Public portfolio-safe architecture
 
 ## Problem Statement
 
@@ -19,6 +66,27 @@ data/synthetic/logistics_demo.csv
 ```
 
 The backend reads the local CSV, normalizes records, computes dashboard metrics, and exposes API endpoints through a small Flask application. The public frontend consumes those endpoints and renders summary cards, filters, status charts, and tabular audit data.
+
+## Original Workflow Model
+
+```text
+Operational Teams
+        │
+        ▼
+Implementation Requirements
+        │
+        ▼
+Pavilions / Modules / Items
+        │
+        ▼
+Verification & Audit Process
+        │
+        ▼
+Centralized Information System
+        │
+        ▼
+Operational Visibility & Decision Support
+```
 
 ## Synthetic Data Strategy
 
