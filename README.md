@@ -1,5 +1,7 @@
 # SOFA 2026 Logistics Dashboard — Public Synthetic Version
 
+> **Note:** This is a public portfolio adaptation of a private production system, built with synthetic data for demonstration purposes only. It is **not** the real Corferias / SOFA 2026 operational tool, and it does not use, expose, or connect to any real data, credentials, or production infrastructure.
+
 Live Demo:
 https://sofa-2026-logistics-dashboard-public.onrender.com
 
